@@ -1,0 +1,187 @@
+body {
+    background-color: #ffffff; /* Pure white background */
+    background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="100%" height="100%" viewBox="0 0 100 100" preserveAspectRatio="xMidYMid slice"><path d="M0 2.5 C 10 0, 30 5, 50 2.5 S 90 5, 100 2.5" fill="none" stroke="%23d6d6d6" stroke-width="0.04"/><path d="M0 10 C 10 7, 30 12, 50 10 S 90 12, 100 10" fill="none" stroke="%23d6d6d6" stroke-width="0.04"/><path d="M0 17.5 C 10 15, 30 20, 50 17.5 S 90 20, 100 17.5" fill="none" stroke="%23d6d6d6" stroke-width="0.04"/><path d="M0 25 C 10 22, 30 27, 50 25 S 90 27, 100 25" fill="none" stroke="%23d6d6d6" stroke-width="0.04"/><path d="M0 32.5 C 10 30, 30 35, 50 32.5 S 90 35, 100 32.5" fill="none" stroke="%23d6d6d6" stroke-width="0.04"/><path d="M0 40 C 10 37, 30 42, 50 40 S 90 42, 100 40" fill="none" stroke="%23d6d6d6" stroke-width="0.04"/><path d="M0 47.5 C 10 45, 30 50, 50 47.5 S 90 50, 100 47.5" fill="none" stroke="%23d6d6d6" stroke-width="0.04"/><path d="M0 55 C 10 52, 30 57, 50 55 S 90 57, 100 55" fill="none" stroke="%23d6d6d6" stroke-width="0.04"/><path d="M0 62.5 C 10 60, 30 65, 50 62.5 S 90 65, 100 62.5" fill="none" stroke="%23d6d6d6" stroke-width="0.04"/><path d="M0 70 C 10 67, 30 72, 50 70 S 90 72, 100 70" fill="none" stroke="%23d6d6d6" stroke-width="0.04"/><path d="M0 77.5 C 10 75, 30 80, 50 77.5 S 90 80, 100 77.5" fill="none" stroke="%23d6d6d6" stroke-width="0.04"/><path d="M0 85 C 10 82, 30 87, 50 85 S 90 87, 100 85" fill="none" stroke="%23d6d6d6" stroke-width="0.04"/><path d="M0 92.5 C 10 90, 30 95, 50 92.5 S 90 95, 100 92.5" fill="none" stroke="%23d6d6d6" stroke-width="0.04"/></svg>');
+    background-repeat: repeat;
+    background-size: contain;
+    font-family: "Exo", sans-serif;
+}
+
+.navbar-brand:hover{
+    color:#ff6800;
+}
+
+
+.navbar_btn button{
+    background-color:#ff6800;
+    color:white;
+    border-radius: 0px;
+    font-weight: 500;
+}
+
+.navbar_btn button:hover{
+    background-color:#ffa12f;
+    color:white;
+}
+
+.navbar-nav{
+    grid-gap: 30px;
+}
+
+#collapsibleNavbar{
+    justify-content: center;
+    padding:10px 0px;
+}
+
+.login a{
+    color:white;
+    font-size: 18px;
+    margin-right:15px;
+    text-decoration: none;
+}
+
+.login a:hover{
+    color:#ff6800;
+}
+
+#collapsibleNavbar a{
+    color:white;
+}
+
+#collapsibleNavbar a:hover{
+    color:#ff6800;
+}
+
+.contact_form{
+    padding:40px;
+}
+
+.contact_div1{
+    height:550px;
+    position: relative;
+    background-color: #f3f3f7;
+    border-radius: 30px;
+}
+
+.contact_div2{
+    position: absolute;
+    top:0px;
+    z-index: 1;
+    background-color: white;
+    width:95%;
+    left:0px;
+    right:0px;
+    margin:0px auto;
+    padding:30px;
+    border-radius: 30px;
+    opacity:0;
+}
+
+.contact-div{
+    border:1px solid #e1e1e1;
+    border-radius: 30px;
+    padding:30px;
+}
+
+.form h1{
+    font-weight: 700;
+}
+
+.contact_grid{
+    display: grid;
+    grid-template-columns: auto auto auto;
+}
+
+.form input,button,textarea{
+    margin:10px 0px;
+}
+
+.form textarea{
+    background-color: #f3f3f7;
+    border-radius: 20px;
+}
+
+.form input{
+    height:70px;
+    width:100%;
+    background-color: #f3f3f7;
+    border-radius: 20px;
+}
+
+.form button{
+    height:60px;
+    width:100%;
+    background-color: #ff6800;
+    color:white;
+    font-size: 20px;
+    border-radius: 20px;
+}
+
+.form button:hover{
+    background-color: #ffa12f;
+    color:white;
+}
+
+.mapouter{
+    width:100%;
+    height:100%;
+}
+.gmap_canvas {
+    overflow:hidden;
+    background:none!important;
+    width:100%;
+    height:100%;
+}
+.gmap_iframe {
+    width:100%!important;
+    height:100%!important;
+    border-radius: 15px;
+}
+
+
+@media(max-width:768px){
+    .contact_form{
+        padding:40px 0px;
+    }
+
+    .contact_div1{
+        height: 700px;
+    }
+
+    .form{
+        margin-bottom: 20px;
+    }
+}
+
+@media(max-width:480px){
+    .contact_div2{
+        padding:15px;
+    }
+
+    .contact-div{
+        padding:15px;
+    }
+
+    .contact_grid{
+        grid-template-columns: auto auto;
+    }
+
+    .contact_div1 {
+        height: 665px;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
